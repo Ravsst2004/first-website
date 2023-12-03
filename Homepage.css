@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    background-color: #DFF6FF;
+}
+/* header navbar */
+.header{
+    overflow: hidden;
+    background-color: #47B5FF;
+    font-size: 20pt;
+    padding: 1px;
+}
+.header img{
+    margin-top: -6px;
+}
+.header a {
+    font-weight: bold;
+    float: right;
+    color: rgb(0, 0, 0);
+    padding-top: 18px;
+    padding-right: 37px;
+    text-decoration: none;
+    padding-bottom: 18px;
+}
+
+/* content */
+.cont{
+    color: white;
+    background-image: url(/img/studentlearning.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 50%;
+    margin-top: -45px;
+}
+.cont h1{
+    font-size: 50pt;
+    text-align: center;
+    padding-top: 8%;
+
+}
+.cont p{
+    font-size: 23pt;
+    text-align: center;
+    margin-top: -30px;
+}
+
+/* content image */
+.course img{
+    width: 400px;
+    height: 450px;
+}
+.course h2{
+    font-size: 30px;
+    text-align: center;
+}
+  .cont-menu {
+    display: flex;
+  }
+
+  .cont-menu > div {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    margin: 34px;
+    padding: 20px;
+    font-size: 30px;
+    border: solid 1px;
+    border-radius: 6px;
+  }
+.course button {
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px ;
+}
+  
+
+/* popup */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+  font-size: 20px;
+  text-align: center;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* footer */
+.foot{
+    font-size: 18px;
+    height: 8%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #90ADC6;
+    margin-top: 4%;
+    padding-top: 20px;
+}
+.foot a{
+  color: blue;
+}
+
+
+/* join us */
+.joinus{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 2%;
+
+}

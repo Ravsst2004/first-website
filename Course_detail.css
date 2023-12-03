@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    background-color: #DFF6FF;
+}
+.header{
+    overflow: hidden;
+    background-color: #47B5FF;
+    font-size: 20pt;
+    padding: 1px;
+}
+.header img{
+    margin-top: -6px;
+}
+.header a {
+    font-weight: bold;
+    float: right;
+    color: rgb(0, 0, 0);
+    padding-top: 18px;
+    padding-right: 37px;
+    text-decoration: none;
+    padding-bottom: 18px;
+}
+
+/* content */
+.us{
+    margin-top: 8%;
+    margin-left: 8%;
+  }
+  .us img{
+    width: 550px;
+    height: 350;
+  }
+  .us h1{
+    float: right;
+    font-size: 60px;
+    padding-right: 5%;
+    margin-top: -10px;
+    width: 50%;
+  }
+  .us p{
+    float: right;
+    font-size: 20px;
+    padding-right: 5%;
+    margin-top: -270px;
+    width: 50%;
+  }
+  .us button{
+    float: right;
+    font-size: 20px;
+    margin-right: 48%;
+    margin-top: -70px;
+  }
+
+  /* jquery */
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+}
+#panel {
+    padding-left: 20%;
+    display: none;
+}
+
+/* panel */
+.cou-sche1 {
+    margin-left: 37%;
+    width: max-content;
+    background-color: #fffbfb;
+    border: solid 1px;
+}
+.cou-sche1 p{
+    text-align: center;
+}
+.cou-sche1 h1{
+    text-align: center;
+}
+
+/* Menu */
+.more-sche{
+    float: right;
+    margin-right: 10%;
+    margin-top: -205px;
+    border: solid 1px ;
+}
+.more-sche h3 {
+    padding-top: 9%;
+    padding-bottom: 9%;
+
+}
+.ui-menu { 
+    width: 150px; 
+
+}
+
+/* footer */
+.foot{
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #90ADC6;
+    margin-top: 7%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.foot a{
+    color: blue;
+}
+

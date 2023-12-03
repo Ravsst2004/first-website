@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link rel="stylesheet" text="text/css" href="Course_detail.css">
+        <!-- JQ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
+
+        <!-- Tabs -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $( function() {
+                $( "#tabs" ).tabs();
+            } );
+        </script>
+
+        <!-- Menu -->
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script>
+            $( function() {
+              $( "#menu" ).menu();
+            } );
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <a style="float: left; padding-left: 37px;" >Logo</a>
+            <a href="register.html"><img src="img/user icon.png"></a>
+            <a href="Contact us.html">Contact us</a>
+            <a href="About us.html">About us</a>
+            <a href="Course.html">Course</a>
+            <a href="Homepage.html">Homepage</a>
+        </div>
+
+        <div class="us"> 
+            <img src="/img/Net.jpg">
+            <h1>.NET</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+            
+            <button id="flip">Schedule</button>
+        </div>
+
+        <div id="panel">
+            <div class="cou-sche1" >
+                <div id="tabs">
+                    <ul>
+                      <li><a href="#tabs-1">week-1</a></li>
+                      <li><a href="#tabs-2">week-2</a></li>
+                      <li><a href="#tabs-3">week-3</a></li>
+                      <li><a href="#tabs-4">week-4</a></li>
+                      <li><a href="#tabs-5">week-5</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <p>Monday 1pm-5pm</p>
+                        <p>Wednesday 1pm-5pm</p>
+                        <p>Friday 1pm-5pm</p>
+                    </div>
+                    <div id="tabs-2">
+                        <p>Monday 1pm-5pm</p>
+                        <p>Wednesday 1pm-5pm</p>
+                        <p>Friday 1pm-5pm</p>
+                    </div>
+                    <div id="tabs-3">
+                        <p>Monday 1pm-5pm</p>
+                        <p>Wednesday 1pm-5pm</p>
+                        <p>Friday 1pm-5pm</p>
+                    </div>
+                    <div id="tabs-4">
+                        <p>Monday 1pm-5pm</p>
+                        <p>Wednesday 1pm-5pm</p>
+                        <p>Friday 1pm-5pm</p>
+                    </div>
+                    <div id="tabs-5">
+                        <p>Monday 1pm-5pm</p>
+                        <p>Wednesday 1pm-5pm</p>
+                        <p>Friday 1pm-5pm</p>
+                    </div>    
+                </div>
+            </div>
+                <!-- Menu -->
+                <div class="more-sche">
+                    <ul id="menu">
+                        <h3>More Course</h3>
+                        <li><div><a href="Course_detailJAVA.html">Java</a></div></li>
+                        <li><div><a href="Course_detailNET.html">.Net</a></div></li>
+                        <li><div><a href="Course_detailMSOFFICE.html">MS Office</a></div></li>
+                        <li><div><a href="Course_detailHTML.html">Html</a></div></li>
+                    </ul>
+                </div>           
+        </div>
+        
+        
+
+        <!-- footer -->
+        <div class="foot">
+            <a href="Privacy policy.html">Privacy policy</a><br>
+            <a href="Sitemap.html">Sitemap</a>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-color: #DFF6FF;
+}
+.header{
+    overflow: hidden;
+    background-color: #47B5FF;
+    font-size: 20pt;
+    padding: 1px;
+}
+.header img{
+    margin-top: -6px;
+}
+.header a {
+    font-weight: bold;
+    float: right;
+    color: rgb(0, 0, 0);
+    padding-top: 18px;
+    padding-right: 37px;
+    text-decoration: none;
+    padding-bottom: 18px;
+}
+
+/* sitemap */
+.cont h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+}
+.cont p{
+    text-align: center;
+    margin-top: -15px;
+}
+
+/* content sitemap */
+
+.course h2{
+    font-size: 30px;
+    text-align: justify;
+}
+.course a{
+    font-size: 18px;
+    text-align: justify;
+    color: blue;
+}
+  .cont-menu {
+    display: flex;
+  }
+
+  .cont-menu > div {
+    width: 100px;
+    margin: 1%;
+    padding-left: 275px;
+    font-size: 30px;
+  }
+
+
+/* footer */
+.foot{
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #90ADC6;
+    margin-top: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.foot a{
+    color: blue;
+}
+

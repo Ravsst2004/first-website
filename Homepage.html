@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <link rel="stylesheet" text="text/css" href="Homepage.css">
+    </head>
+    <body>
+        <div class="header">
+            <a style="float: left; padding-left: 37px;" >Logo</a>
+            <a href="register.html" ><img src="img/user icon.png"></a>
+            <a href="Contact us.html">Contact us</a>
+            <a href="About us.html">About us</a>
+            <a href="Course.html">Course</a>
+            <a href="Homepage.html">Homepage</a>
+        </div>
+
+        <!-- content -->
+        <div class="cont">
+            <h1>ABC Learning Center</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="cont-menu">
+            <div class="course" align="center">
+                <img src="/img/e-learning-icons-flat-vector.jpg" >
+                <button id="myBtn"><h2 align="center">E Learning</h2></button>
+            </div>
+            <div class="course" align="center">
+                <img src="/img/schedule.jpg" >
+                <button id="myBtn1"><h2 align="center">Flexsible time</h2></button>
+            </div>
+            <div class="course" align="center">
+                <img src="/img/learn.jpg" >
+                <button id="myBtn2"><h2 align="center">More thinking</h2></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" >
+                <span class="close">&times;</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                <a href="Register.html" class="joinus"><button>JOIN US</button></a>
+            </div>
+        </div>
+        
+<!-- footer -->
+        <div class="foot" id="foot">
+            <a href="Privacy policy.html">Privacy policy</a><br>
+            <a href="Sitemap.html">Sitemap</a>
+        </div>
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+        modal.style.display = "none";
+            }
+        }
+// =====
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn1");
+    var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+        modal.style.display = "none";
+            }
+        }
+// ====
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn2");
+    var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+        modal.style.display = "none";
+            }
+        }
+        </script>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Admin.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+                let i = 0
+                // ADD
+                function save() {
+                    for (let x=0; x<localStorage.length; x++){
+                        i ++;
+                    }
+                        var name=document.getElementById("addname").value;
+                        var email=document.getElementById("addemail").value;
+                        var pass=document.getElementById("addpass").value;    
+                   
+                    var data = {
+                        name : name,
+                        email : email,
+                        pass : pass,
+                    }
+
+                    // VALIDATE
+                    if(addname.value=='' || addemail.value=='' || addpass.value=='') {
+                        return addname.focus();
+                    } else {
+                        localStorage.setItem("user"+i,JSON.stringify(data));
+                    }
+                }
+
+                // VIEW
+                function view() {
+                    if (localStorage.length !=  0){
+                        for (let i = 0; i < localStorage.length; i++){
+                        let user = JSON.parse(localStorage.getItem(localStorage.key(i)));
+                        $("#row").append(`
+                            <tr>
+                                <td>${i+1}</td>
+                                <td>${user.name}</td>   
+                                <td>${user.email}</td>
+                                <td>${user.pass}</td>
+                                <td>
+                                    <button class="edit" id="${localStorage.key(i)}"> EDIT </button>
+                                </td>
+                                <td>
+                                    <button class="remove" id="${localStorage.key(i)}"> DELETE </button>
+                                </td>
+                            </tr>`
+                            );
+                            $(".remove")[i].addEventListener("click", () => {
+                                removeItem(localStorage.key(i));
+                            });
+                            $(".edit")[i].addEventListener("click", () => {
+                                editItem(i);
+                            });
+                        }
+                    }
+                }
+
+            // DELETE
+            function removeItem(user){ 
+                if (confirm("Are you sure to delete it?") == true) {
+                row = document.getElementById("row");
+                localStorage.removeItem(user) 
+                window.location.reload();
+                }
+            }
+
+
+            // EDIT and UPDATE
+            function submitedit(x){
+                let editItem = localStorage.key(x);
+                let name = document.getElementById("addname_e");
+                let email = document.getElementById("addemail_e");
+                let pass = document.getElementById("addpass_e");
+                data = {
+                    name : name.value,
+                    email : email.value,
+                    pass : pass.value,
+                };
+                localStorage.setItem(editItem, JSON.stringify(data));
+                console.log(data)
+            }
+
+            function editItem(x) {
+                let user = JSON.parse(localStorage.getItem(localStorage.key(x)))
+                var editItem = `<div class="editcont">
+                <form onsubmit="submitedit(${x})" align="center" class="form-edit">
+                    <h1 class="admin-textJS" >Edit</h1>
+                    <div class="input-groupJS">
+                        <input type="text" value="${user.name}" id="addname_e" placeholder="Username">
+                    </div>
+                    <div class="input-groupJS">
+                        <input type="text" value="${user.email}" id="addemail_e" placeholder="Email">
+                    </div>
+                    <div class="input-groupJS">
+                        <input type="text" value="${user.pass}" id="addpass_e" placeholder="Password">
+                    </div>
+                    <div class="btnJS">
+                        <button type="submit" value="update">UPDATE</button>
+                    </div>
+                        </form>
+                    </div>`
+                     document.getElementById("editdate").innerHTML = editItem;
+            }
+            
+            $(document).ready(function() {
+                view();
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <a style="float: left; padding-left: 37px;" >Logo</a>
+            <a href="register.html"><img src="img/user icon.png"></a>
+            <a href="Contact us.html">Contact us</a>
+            <a href="About us.html">About us</a>
+            <a href="Course.html">Course</a>
+            <a href="Homepage.html">Homepage</a>
+        </div>
+        
+			<form action="" class="cont" align="center">
+                <h1 class="admin-text" >ADMIN</h1>
+			    <div class="input-group">
+				    <input type="text" placeholder="Username" id="addname" required>
+			    </div>
+				<div class="input-group">
+				    <input type="text" placeholder="Email" id="addemail" required>
+			    </div>
+				<div class="input-group">
+				    <input type="text" placeholder="Password" id="addpass" required>
+			    </div>
+			    <div class="btn">
+				    <button name="submit" onclick="save()" >ADD</button> 
+                </div>
+			</form>
+        
+            <div id="editdate"></div>
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Edit</th>
+                        <th>Deleted</th>
+                    </tr>
+                </thead>
+                <tbody id="row">
+                </tbody>
+            </table>
+
+            
+        <!-- footer -->
+        <div class="foot" id="foot">
+            <a href="Privacy policy.html">Privacy policy</a><br>
+            <a href="Sitemap.html">Sitemap</a>
+        </div>
+    </body>
+</html>

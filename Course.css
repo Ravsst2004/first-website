@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    background-color: #DFF6FF;
+}
+.header{
+    overflow: hidden;
+    background-color: #47B5FF;
+    font-size: 20pt;
+    padding: 1px;
+}
+.header img{
+    margin-top: -6px;
+}
+.header a {
+    font-weight: bold;
+    float: right;
+    color: rgb(0, 0, 0);
+    padding-top: 18px;
+    padding-right: 37px;
+    text-decoration: none;
+    padding-bottom: 18px;
+}
+
+/* Content */
+.cont-1 h1 {
+    text-align: center;
+    font-size: 70px;
+    background-image: url(/img/course.jpg);
+    background-size: 1550px 1450px;
+    background-color: white;
+    color: white;
+    margin-top: 0;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+/* content course */
+.course img{
+    width: 320px;
+    height: 200px;
+}
+.course h2{
+    font-size: 30px;
+    text-align: center;;
+}
+.course p{
+    font-size: 20px;
+    text-align: justify;;
+}
+.course a{
+    color: blue;
+    ;
+}
+
+  .cont-menu {
+    display: flex;
+  }
+  
+  .cont-menu > div {
+    background-color: #f1f1f1;
+    border: solid 1px;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+
+
+/* schedule button */
+.cou-sche{
+    text-align: center;
+    font-size: 18px;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+}
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+.cou-sche1 {
+    margin-left: 10%;
+    width: 300px;
+    background-color: #fffbfb;
+    border: solid 1px;
+}
+.cou-sche1 p{
+    text-align: center;
+    font-size: 20px;
+}
+.cont-schedule {
+    display: flex;
+}
+.cont-schedule > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* footer */
+.foot{
+    font-size: 18px;
+    height: 8%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #90ADC6;
+    margin-top: 1%;
+    padding-top: 20px;
+}
+.foot a{
+    color: blue;
+}
+
+
+
+

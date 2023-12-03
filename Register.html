@@ -1,0 +1,52 @@
+<html>
+    <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="Register.css">
+		<script>
+                let i = 0
+                // ADD
+                function save() {
+                    for (let x=0; x<localStorage.length; x++){
+                        i ++;
+                    }
+                        var name=document.getElementById("addname").value;
+                        var email=document.getElementById("addemail").value;
+                        var pass = document.getElementById("addpass").value;    
+
+                    var data = {
+                        name : name,
+                        email : email,
+                        pass : pass,
+                    }
+
+                    // VALIDATE
+                    if(addname.value=='' || addemail.value=='' || addpass.value=='') {
+                        return addname.focus();
+                    } else {
+                        localStorage.setItem("user"+i,JSON.stringify(data));
+                    }
+            }
+
+		</script>
+    </head>
+    <body>
+        <div class="cont"> 
+			<form action="/Thankyou.html">
+				<p class="register-text" >REGISTRATION</p>
+			    <div class="input-group">
+				    <input type="text" placeholder="Username" id="addname" name="Vname" required>
+			    </div>
+				<div class="input-group">
+				    <input type="text" placeholder="Email" id="addemail" name="Vname" required>
+			    </div>
+				<div class="input-group">
+				    <input type="text" placeholder="Password" id="addpass" name="Vname" required>
+			    </div>
+			    <div>
+				    <button name="submit" onclick="save()" class="btn" id="myBtn">ADD</button>
+			    </div>
+			</form>
+	    </div>
+
+    </body>
+</html>
